@@ -4,8 +4,6 @@
 <p align="center">
   <h3 align="center">Human Pose Detection - Machine Model Training </h3>
   <p align="center">
-    <a href="https://humanposedetection.netlify.app/">View Demo</a>
-    ·
     <a href="https://github.com/ahmettekeli/HumanPoseDetection/issues">Report Bug</a>
     ·
     <a href="https://github.com/ahmettekeli/HumanPoseDetection/issues">Request Feature</a>
