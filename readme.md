@@ -17,6 +17,12 @@
 <!-- [![Product Name Screen Shot][product-screenshot]](live demo link goes here) -->
 
 This is a sample Human Pose Detection project developed using [ml5.js PoseNet](https://learn.ml5js.org/#/reference/posenet).
+Custom machine model can be trained for the recognition of custom human poses. (Hands up, squat etc.)
+
+Machine model training should be done with the buttons below the video element. [Pose_Label] saves the name of the pose. Make sure you enter a valid name before starting the training for your desired human pose. [Collect_Data] button starts the data collection for a specific human pose and snap shots the body composition in the video constantly for 20 seconds and collects raw image data. Data collection has 5 seconds delay to give you enough time to be ready in front of the camera. [Status] header will have informative directives. 
+Multiple human poses can be trained using [Collect_Data] button. Make sure you enter [Pose_Label] for each pose you want to train the machine model for. Once data collection is done for each human pose you want, click [Train] button to train a machine model from the raw image data. It will open up a side bar to show the machine model training progress. Once it is finished, click [Save_Machine_Model] button to download the machine model you trained with your desired human poses.
+
+Now you have a custom machine model which will recognize the human poses you train it for. Feel free to build fun things with it and let me know what you build.
 
 ### Prerequisites
 
