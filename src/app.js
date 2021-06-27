@@ -41,10 +41,6 @@ setTimeout(() => {
 	}, 1000);
 }, 3000);
 
-// brain.loadData("../3Movements_Raw_Model_data.json", rawDataLoaded);
-
-console.log({ brain });
-
 trainModelBtn.onclick = () => {
 	brain.loadData("../src/3Movements_Raw_Model_data.json", rawDataLoaded);
 };
@@ -68,7 +64,6 @@ saveButton.onclick = () => {
 
 targetSelectorBtn.onclick = (e) => {
 	e.preventDefault();
-	console.log(e.target.form[0].value);
 	targetLabel = e.target.form[0].value;
 };
 
@@ -80,9 +75,7 @@ const trainModel = () => {
 		brain.train(options, finishedTraining);
 	},
 	predictPose = () => {
-		console.log("predicting pose");
 		if (pose) {
-			console.log("pose var.");
 			let inputs = [];
 			for (let i = 0; i < pose.keypoints.length; i++) {
 				let x = pose.keypoints[i].position.x;
@@ -96,20 +89,14 @@ const trainModel = () => {
 		}
 	},
 	gotResult = (error, results) => {
-		console.log({ results });
-		console.log(results[0].label);
 		if (error) {
 			console.log({ error });
 		}
 	},
 	gotPoses = (poses) => {
-		// console.log({ poses });
 		if (poses.length > 0) {
 			pose = poses[0].pose;
 			skeleton = poses[0].skeleton;
-
-			// console.log({ pose });
-			// console.log({ skeleton });
 			let inputs = [];
 			for (let i = 0; i < pose.keypoints.length; i++) {
 				let x = pose.keypoints[i].position.x;
