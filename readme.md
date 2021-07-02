@@ -14,7 +14,7 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](live demo link goes here) -->
 
-<p>This is a sample Human Pose Detection project developed using [ml5.js PoseNet](https://learn.ml5js.org/#/reference/posenet).
+<p>This is a sample Human Pose Detection project developed using <a href="https://learn.ml5js.org/#/reference/posenet">ml5.js PoseNet</a>.
 Custom machine model can be trained for the recognition of custom human poses. (Hands up, squat etc.)</p>
 
 <p>In order to train a machine model, there should be raw data collected. When there is raw data ready, we can proceed to train a machine model from that data. Once the training is complete the machine model can be downloaded and consumed in any application.</p>
